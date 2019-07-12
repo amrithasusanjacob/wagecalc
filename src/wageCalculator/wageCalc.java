@@ -1,3 +1,5 @@
+package wageCalculator;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -41,6 +43,21 @@ public class wageCalc extends Application {
 				calculate.setText("Calculate");
 				//Make a layout manager
 				VBox root = new VBox();
+				root.getChildren().add(nameLabel);
+				root.getChildren().add(nameTextBox);
+				root.getChildren().add(hoursLabel);
+				root.getChildren().add(hoursTextBox);
+				root.getChildren().add(wageLabel);
+				root.getChildren().add(wageTextBox);
+				root.getChildren().add(calculate);
+				root.setSpacing(10);
+				//set the width x height of app to (500 x 500)
+				primaryStage.setScene(new Scene(root,500,500));
+				primaryStage.setTitle("Example 2");
+				
+				
+				// Show the app
+				primaryStage.show();
 	}
 
 }
