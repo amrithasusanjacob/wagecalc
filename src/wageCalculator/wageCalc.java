@@ -86,9 +86,7 @@ public class wageCalc extends Application {
 				root.setSpacing(10);
 				//set the width x height of app to (500 x 500)
 				primaryStage.setScene(new Scene(root,500,500));
-				primaryStage.setTitle("Example 2");
-				
-				
+				primaryStage.setTitle("Example 2");		
 				// Show the app
 				primaryStage.show();
 	}
